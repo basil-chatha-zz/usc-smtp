@@ -1,12 +1,12 @@
 import smtplib, ssl
 
 port = 465  # For SSL
-password = 'Rp1m34man*'
+password = ''
 
 # Create a secure SSL context
 context = ssl.create_default_context()
 
-with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-    server.login("basil.chatha8@gmail.com", password)
+with smtplib.SMTP_SSL("smtp.usc.edu", port, context=context) as server:
+    server.login("bchatha@usc.edu", password)
 
 print('SUCCESS!')
